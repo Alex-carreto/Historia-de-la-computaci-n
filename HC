@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <windows.h>
+#include <locale.h>
+
+
+int main (){
+	setlocale(LC_ALL, "Spanish");
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	
+	printf ("		     \n        				  ");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
+	printf ( "Generaciones Computacionales\n");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf ("\n");
+	printf ("\n");
+	printf (" Las generaciones de las computadoras se clasifican generalmente en cinco categorias principales, que abar-\n can desde la década de 1940 hasta la fecha.\n");
+	printf ("\n");
+	printf ("\n");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
+	printf (" 1. Primera Generación (1940-1950):");
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);	
+	printf (" Caracterizadas por el uso de válvulas de vacío para el procesamiento.\n Eran grandes,costosas y tenían velocidades de procesamiento relativamente bajas.");
+	printf ("\n");
+	printf ("\n");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
+	printf (" 2. Segundaa Generación (1950-1960):");
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf(" Se intodujeron transitores en lugar de válvulas, lo que redujo el ta-\n maño y el calor generado. Se utilizaron cintas magnéticas y tambores para el almacenamiento.");
+	printf ("\n");
+	printf ("\n");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
+	printf (" 3. Tercera Generación (1960-1970):");
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf (" Surgieron los circuitos integrados, que permitieron la integración de \n multiples componentes en un solo chip. Se mejoró el rendimiento y se redujo aún más el tamaño.");
+	printf ("\n");
+	printf ("\n");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
+	printf (" 4. Cuarta Generación (1970-1980):");
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf (" Se desarollaron microprocesadores, lo que llevó a la creación de las\n primeras computadoras personales. Se introdujeron las interfaces gráficas de usuario y el software más a-\n vanzado.");
+	printf ("\n");
+	printf ("\n");
+	
+	SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
+	printf (" 5. Quinta Generación (1980 en adelante):");
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf (" Se enfocó principalmente al desarollo de inteligenca artificial\n y el procesamiento paralelo. Se introdujeron las supercomputadoras y hubo avances significativos en areás \n como la robótica y el procesamiento del lenguaje natural.");
+	printf ("\n");
+	printf ("\n");
+	
+	printf (" Podemos decir que las  generaciones computacionales  han presentado mejoras y ventajas progresivas  a lo\n largo del tiempo,  dejando cada una su huella. La primera  generación,  inauguró la era de la computación\n");
+	printf (" automatizada, permitiendo cálculos más rápidos y complejos. La segunda generación promovió la adopción de\n de las computadoras en diversas industrias. La  tercera ... trajo consigo cicuitos integrados, aumentando\n");
+	printf (" la eficiencia  y habilitando aplicaciones en tiempo real. La cuarta generación marcó el auge de las PCs y\n la computación personal. Por último la quinta ... condujo a avances en la IA, a sistemas capaces de simu-\n");
+	printf (" lar el razonamiento humano y transformó áreas como la medicina y la toma de decisiones automatizada.");
+	printf ("\n");
+	printf ("\n");
+	
+	return 0;
+}
